@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+  instance:
+    instance-id: goods-order #自定义服务名称信息
+    status-page-url: http://localhost:${server.port}/swagger-ui.html # ${server.port}为该服务的端口号
+server:
+  port: 8889
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/shoping?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    # Redis数据库索引
+    database: 0
+    host: 192.168.67.101
+    port: 6379
+    password: 123456
+  application:
+    name: goods-order
+mybatis:
+  typeAliasesPackage: com.brady.order.entity
+  mapperLocations: classpath:mapper/*.xml
