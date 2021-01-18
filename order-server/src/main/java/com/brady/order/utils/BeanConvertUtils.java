@@ -1,4 +1,4 @@
-package com.brady.order.util;
+package com.brady.order.utils;
 
 import org.springframework.beans.BeanUtils;
 

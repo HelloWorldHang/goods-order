@@ -4,8 +4,8 @@ import com.brady.order.dto.OrderDTO;
 import com.brady.order.entity.Order;
 import com.brady.order.mapper.OrderMapper;
 import com.brady.order.service.OrderService;
-import com.brady.order.util.BeanConvertUtils;
-import com.brady.order.util.DateUtil;
+import com.brady.order.utils.BeanConvertUtils;
+import com.brady.order.utils.DateUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
