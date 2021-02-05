@@ -26,4 +26,13 @@ public interface OrderApi {
     @ApiOperation(value = "提交订单", response = Boolean.class)
     @PostMapping(value = "/order/submitOrder", produces = APPLICATION_JSON_UTF8_VALUE, consumes = APPLICATION_JSON_UTF8_VALUE)
     boolean submitOrder(@Validated @RequestBody OrderDTO.SubmitOrderDTO dto);
+
+    /**
+     * MQ test
+     * @param dto 接口入参
+     * @return
+     */
+    @ApiOperation(value = "mq_test", response = Boolean.class)
+    @PostMapping(value = "/order/mqTest", produces = APPLICATION_JSON_UTF8_VALUE, consumes = APPLICATION_JSON_UTF8_VALUE)
+    boolean mqTest(@Validated @RequestBody OrderDTO.TestOrder dto);
 }

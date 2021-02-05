@@ -42,4 +42,16 @@ public class OrderDTO {
         private String addr;
     }
 
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    @Builder
+    public static class TestOrder{
+        @NotNull
+        private Integer gid;
+
+        @NotNull
+        private String goodsName;
+    }
+
 }

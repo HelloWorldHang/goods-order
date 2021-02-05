@@ -20,6 +20,7 @@
     <result column="create_time" jdbcType="INTEGER" property="createTime" />
     <result column="update_time" jdbcType="INTEGER" property="updateTime" />
   </resultMap>
+
   <sql id="Example_Where_Clause">
     <!--
       WARNING - @mbg.generated
@@ -97,6 +98,7 @@
     id, gid, goods_name, price, comment, username, uid, tel, addr, status, create_time, 
     update_time
   </sql>
+
   <select id="selectByExample" parameterType="com.brady.order.entity.OrderExample" resultMap="BaseResultMap">
     <!--
       WARNING - @mbg.generated
